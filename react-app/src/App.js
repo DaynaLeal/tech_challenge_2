@@ -16,8 +16,14 @@ export default class App extends React.Component{
   return (
     <div>
       <ul className="songs">
-          {songs.map((song) => (
+          {Object.keys(songs.songs).map((key, index) => (
             <li className="song">
+              {/* <p>
+                {songs.songs[key]}
+              </p> */}
+              {/* <p>
+                {songs}
+              </p>
               <p>
                 <strong>Title:</strong> {song.title}
               </p>
@@ -26,7 +32,7 @@ export default class App extends React.Component{
               </p>
               <p>
                 <strong>Year:</strong> {song.year}
-              </p>
+              </p> */}
             </li>
           ))}
         </ul>
