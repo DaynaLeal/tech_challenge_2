@@ -1,0 +1,20 @@
+[
+  {
+    "title": "test song",
+    "artist": "me",
+    "year": 2020,
+    "genre": "pop"
+  },
+  {
+    "title": "second song",
+    "artist": "you",
+    "year": 2020,
+    "genre": "pop"
+  },
+  {
+    "title": "third song",
+    "artist": "that one guy",
+    "year": 2020,
+    "genre": "pop"
+  }
+]
