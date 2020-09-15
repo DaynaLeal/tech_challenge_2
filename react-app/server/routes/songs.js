@@ -1,5 +1,9 @@
 import express from 'express';
 import fs from 'fs';
+import path from 'path';
+
+var __dirname = path.resolve();
+var rootDirecotry = path.join(__dirname, "..");
 
 let jsonData = {}
 fs.readFile('../data/songs.json', 'utf-8', (err, data) => {
@@ -11,8 +15,11 @@ fs.readFile('../data/songs.json', 'utf-8', (err, data) => {
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.json(jsonData);
+  // res.json(jsonData);
   // console.log(jsonData);
+
+  res.sendFile('/public/index.html', { root: rootDirecotry });
+  console.log(jsonData);
 });
 
 export default router;
