@@ -18,6 +18,7 @@
     "eject": "react-scripts eject",
     "start": "npm run build && (cd server && npm start)"
   },
+  "proxy": "http://localhost:5000",
   "eslintConfig": {
     "extends": "react-app"
   },

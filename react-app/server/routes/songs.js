@@ -11,8 +11,8 @@ fs.readFile('../data/songs.json', 'utf-8', (err, data) => {
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.send(jsonData);
-  console.log(jsonData);
+  res.json(jsonData);
+  // console.log(jsonData);
 });
 
 export default router;
