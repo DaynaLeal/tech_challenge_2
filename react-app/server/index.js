@@ -8,7 +8,6 @@ const app = express();
 const PORT = 5000;
 var __dirname = path.resolve();
 
-
 // middlewares
 app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
