@@ -15,11 +15,11 @@ fs.readFile('../data/songs.json', 'utf-8', (err, data) => {
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  // res.json(jsonData);
+  res.json(jsonData);
   // console.log(jsonData);
 
-  res.sendFile('/public/index.html', { root: rootDirecotry });
-  console.log(jsonData);
+  // res.sendFile('/public/index.html', { root: rootDirecotry });
+  // res.send(console.log(jsonData));
 });
 
 export default router;
