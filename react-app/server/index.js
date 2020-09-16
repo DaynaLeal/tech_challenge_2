@@ -2,7 +2,6 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import path from 'path';
 
-import landingRoutes from './routes/landing.js';
 import songsRoutes from './routes/songs.js';
 
 const app = express();
@@ -13,12 +12,17 @@ app.use(bodyParser.json());
 
 var __dirname = path.resolve();
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../build')));
+//this renders a div with an empty li element, unsure where from
+//but this caused errors in the console:
+//a GET http://localhost:5000/data/songs.json not found (404), may have to send the file differently
+//USING '../public' shows updated index.html WITHOUT rendering anything into the root element
 
-// app.use('/', landingRoutes);
 app.use('/songs', songsRoutes);
 
 app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`));
+
+
 
 //Below is my attempt at server side rendering
 //had issues importing ReactDOMServer from 'react-dom/server' and App
