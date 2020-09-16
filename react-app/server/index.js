@@ -15,7 +15,7 @@ var __dirname = path.resolve();
 
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.use('/', landingRoutes);
+// app.use('/', landingRoutes);
 app.use('/songs', songsRoutes);
 
 app.listen(PORT, () => console.log(`Server is running on port: http://localhost:${PORT}`));
