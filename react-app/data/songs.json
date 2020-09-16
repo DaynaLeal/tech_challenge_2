@@ -1,20 +1,23 @@
 [
   {
-    "title": "test song",
-    "artist": "me",
-    "year": 2020,
+    "title": "Heat",
+    "artist": "Kelly Clarkson",
+    "album": "Meaning of Life",
+    "year": 2017,
     "genre": "pop"
   },
   {
-    "title": "second song",
-    "artist": "you",
-    "year": 2020,
+    "title": "Forward Motion",
+    "artist": "Daya",
+    "album": "From the Original Motion Picture 'Late Night'",
+    "year": 2019,
     "genre": "pop"
   },
   {
-    "title": "third song",
-    "artist": "that one guy",
-    "year": 2020,
-    "genre": "pop"
+    "title": "Great One",
+    "artist": "Jessie Reyes",
+    "album": "Kiddo",
+    "year": 2017,
+    "genre": "R&B/Soul"
   }
 ]
