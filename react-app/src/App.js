@@ -1,8 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React from 'react';
+// import React, { useEffect, useState } from 'react';
+// import axios from 'axios';
 // import './App.css';
-import Table from './components/songComponent';
-import withTableLoading from './components/withTableLoading';
+// import Table from './components/songComponent';
+// import withTableLoading from './components/withTableLoading';
+import LandingPage from './components/LandingPage/landingPage';
+
+function App() {
+  return (
+    <div className="App">
+      <LandingPage />
+    </div>
+  );
+}
+
+export default App;
 
 // function App() {
 //   const TableLoading = withTableLoading(Table);
@@ -69,37 +81,37 @@ import withTableLoading from './components/withTableLoading';
 // export default App;
 
 //FIRST ATTEMPT BELOW
-export default class App extends React.Component{
-  state = {
-    songs: [],
-  };
-  componentDidMount() {
-    axios.get("./data/songs.json").then((response) => {
-      this.setState({songs: response.data});
-    });
-  }
-  render() {
-  const { songs } = this.state;
-  return (
-    <div>
-      <h1>APP.JS RENDER SUCCESSFUL</h1>
-      {/* <ul className="songs">
-          {songs.map((song) => (
-            <li className="song">
-              <p>
-                <strong>Title:</strong> {song.title}
-              </p>
-              <p>
-                <strong>Artist:</strong> {song.artist}
-              </p>
-              <p>
-                <strong>Year:</strong> {song.year}
-              </p> 
-            </li>
-          ))}
-        </ul> */}
-    </div>
-  );
-  }
-}
+// export default class App extends React.Component{
+//   state = {
+//     songs: [],
+//   };
+//   componentDidMount() {
+//     axios.get("./data/songs.json").then((response) => {
+//       this.setState({songs: response.data});
+//     });
+//   }
+//   render() {
+//   const { songs } = this.state;
+//   return (
+//     <div>
+//       <h1>APP.JS RENDER SUCCESSFUL</h1>
+//       {/* <ul className="songs">
+//           {songs.map((song) => (
+//             <li className="song">
+//               <p>
+//                 <strong>Title:</strong> {song.title}
+//               </p>
+//               <p>
+//                 <strong>Artist:</strong> {song.artist}
+//               </p>
+//               <p>
+//                 <strong>Year:</strong> {song.year}
+//               </p> 
+//             </li>
+//           ))}
+//         </ul> */}
+//     </div>
+//   );
+//   }
+// }
 
